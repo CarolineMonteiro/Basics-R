@@ -7,3 +7,13 @@ nivel_escolarizacao <- factor(nivel_escolarizacao,
                               levels = c("fundamental",
                                          "médio",
                                          "graduação"))
+
+
+respostas <- c(0, 1, 1, 1, 99, 0, 99, 0, 0, 0, 1, 99)
+
+respostas <- factor(respostas)
+
+# Se quero rotular essas respostas:
+respostas <- factor(respostas,
+                    levels = c(0, 99, 1),
+                    labels = c("não", "talvez", "sim"))
